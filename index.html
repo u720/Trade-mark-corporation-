@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trade Mark Carporation</title>
+    <script
+      src="https://kit.fontawesome.com/86f467d7ef.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="CSS/main.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <a class="logo" href="#">Trade-Mark <span>Carporation</span></a>
+        <div class="icons">
+
+          <i class="fa-solid fa-house fa-lg"><a href="#"></a></i>
+          <i class="fa-solid fa-cart-shopping fa-lg"><a href="#"></a></i>
+          <i class="fa-solid fa-user fa-lg"><a href="#"></a></i>
+        </div>
+        
+        <!-- <i id="menu-bar" class="fa-solid fa-bars" ></i> -->
+        <!-- <i id="menu-bar" class="fa-solid fa-bars"></i> -->
+        <i id="menu-bar" class="fa-solid fa-bars fa-lg"></i>
+        <nav class="features">
+          <img id="X-mark" class="fa-xmark" src="icons/exit.svg" alt="exit button">
+          <ul class="primary-nav">
+            <li class="home"><a href="#">Home</a></li>
+            <li class="cart"><a href="#">Cart</a></li>
+            <li class="profile"><a href="#">Your profile</a></li>
+          </ul>
+          <ul class="secondry-nav">
+            <li class="contact us"><a href="#">about us</a></li>
+            <li class="share"><a href="#">Share</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <section class="product-1">
+      <div class="container">
+        <div class="left-col">
+          <h1 class="p1-details">LED DIGITAL DISPLAY POWER AT A GLANCE</h1>
+          <p class="sale-tag">25% OFF FOR NEW COSTUMERS</p>
+          <div class="tooltip"><img class="prod1" src="photos/product1.jpg" alt="product" /><span class="tooltiptext">Price: 2999</span></div>
+          <div class="container-2">
+            <a href="#" class="view-product">View product</a>
+            <a href="#" class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to cart</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pro1">
+      
+        <img class="pro2" src="photos/screen-post-SdBWe3e0_9Q-unsplash.jpg" alt="product image">
+        <img class="pro3" src="photos/third product.jpg" alt="product image">
+        <h2 class="product-text">Boats A3</h2>
+        <p  class="product-text">PKR-2100</p>
+        <h2 class="product-text1">Airpod i3</h2>
+        <p  class="product-text1">PKR-3100</p>
+    </section>
+
+    <section class="sign-in">
+      <div class="container">
+        <h3 class="e-email">Sign in To get notified for the latest products in future</h3>
+        <form action="action.php">
+          <label for="Email">Email</label>
+          <input
+            type="email"
+            id="Email"
+            name="Email"
+            placeholder="e.g:human123@gmail.com"
+          />
+          <br />
+          <input type="submit" class="submit-button" value="Submit" />
+        </form>
+      </div>
+    </section>
+    <section class="feedback">
+      <div class="container">
+        <div class="container-left">
+          <h3>Give us your feedback</h3>
+          <form action="action.php">
+            <label for="Feedback">Feedback</label>
+            <br />
+            <textarea
+              name="Feedback"
+              id="Feedback"
+              cols="30"
+              rows="10"
+              placeholder="type here!!"
+            ></textarea>
+          </form>
+          <input type="submit" class="submit-feedback" value="Send feedback" />
+        </div>
+        <div class="container-right">
+          <h3 class="locationn">Location</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.973382057235!2d73.1563208503687!3d33.6578515806205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfeb104a188d9d%3A0x719284290cc3d2c2!2sHostel%20City!5e0!3m2!1sen!2s!4v1679219927783!5m2!1sen!2s"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <script>
+
+      const mobileBtn = document.getElementById('menu-bar')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('X-mark');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+  </body>
+</html>
